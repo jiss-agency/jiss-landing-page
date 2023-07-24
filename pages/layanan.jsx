@@ -51,7 +51,7 @@ export default function layanan({ layanan }) {
 				   <h3 className="md:text-[2rem] font-[500] my-8 text-[1.5rem] max-md:underline ">
 					 {judulLayanan}
 				   </h3>
-				   <p className="md:text-[22px] text-left">{deskripsiLayanan}</p>
+				   <p className="md:text-[22px] text-left">{deskripsiLayanan}m</p>
 				 </div>
 			   );
 			 })}
