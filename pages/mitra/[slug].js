@@ -47,8 +47,11 @@ const Mitra = ({ mitra }) => {
     fileRefrensi,
     urlFormulir,
     lokasiPendidikan,
-	embedHtmlLokasi
+	embedHtmlLokasi,
+	fotoFasilitas,
+	fotoKegiatan
   } = mitra.fields;
+
   return (
     <>
       <Head>
@@ -101,8 +104,43 @@ const Mitra = ({ mitra }) => {
             })}
           </div>
 
+          <div className="mb-6">
+            <h2 className="h2 capitalize mb-6">Foto Kegiatan {judulLink}</h2>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:gap-4">
+				{
+					fotoKegiatan?.map((foto, i) => (
+						<div key={i}>
+						<p className="mb-2 font-semibold text-xl">{i +1}. {foto.fields.title}</p>
+							<Image
+								src={"https:" + foto.fields.file.url}
+								width={400}
+								height={400}
+								alt={foto.fields.title}
+								className="w-full h-auto md:h-[400px] object-cover rounded-sm border"
+							/>
+						</div>
+					))
+				}
+			</div>
+          </div>
           <div>
             <h2 className="h2 capitalize mb-6">Fasilitas Pendidikan</h2>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:gap-4">
+				{
+					fotoFasilitas?.map((foto, i) => (
+						<div key={i}>
+						<p className="mb-2 font-semibold text-xl">{i +1}. {foto.fields.title}</p>
+							<Image
+								src={"https:" + foto.fields.file.url}
+								width={400}
+								height={400}
+								alt={foto.fields.title}
+								className="w-full h-auto md:h-[400px] object-cover rounded-sm border"
+							/>
+						</div>
+					))
+				}
+			</div>
           </div>
 
           <div>
