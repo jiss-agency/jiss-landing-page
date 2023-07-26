@@ -63,7 +63,7 @@ export default function index({ mitra }) {
           </div>
 
           <h2 className="h2 mt-5 mb-4">Piagam Kerjasama</h2>
-          <div className="w-full flex max-md:flex-col gap-6">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             {mitra.items.map((item) => {
               const { piagamKerjasama, slug } = item.fields;
               return (

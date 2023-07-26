@@ -110,7 +110,7 @@ const Mitra = ({ mitra }) => {
 				{
 					fotoKegiatan?.map((foto, i) => (
 						<div key={i}>
-						<p className="mb-2 font-semibold text-xl">{i +1}. {foto.fields.title}</p>
+						<p className="mb-2 font-semibold text-xl capitalize">{i +1}. {foto.fields.title}</p>
 							<Image
 								src={"https:" + foto.fields.file.url}
 								width={400}
@@ -124,12 +124,12 @@ const Mitra = ({ mitra }) => {
 			</div>
           </div>
           <div>
-            <h2 className="h2 capitalize mb-6">Fasilitas Pendidikan</h2>
+            <h2 className="h2 capitalize mb-4">Fasilitas Pendidikan</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:gap-4">
 				{
 					fotoFasilitas?.map((foto, i) => (
 						<div key={i}>
-						<p className="mb-2 font-semibold text-xl">{i +1}. {foto.fields.title}</p>
+						<p className="mb-2 font-semibold text-xl capitalize">{i +1}. {foto.fields.title}</p>
 							<Image
 								src={"https:" + foto.fields.file.url}
 								width={400}

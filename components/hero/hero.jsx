@@ -2,7 +2,7 @@ import Button1 from "../general/button1";
 import Button2 from "../general/button2";
 import RunningText from "./runningText";
 import VideoBackground from "./videoBackground/video";
-import { Poppins, Inter, Carter_One } from "next/font/google";
+import {  Carter_One } from "next/font/google";
 
 const carterOne = Carter_One({
   weight: "400",
