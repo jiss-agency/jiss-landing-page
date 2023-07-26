@@ -104,7 +104,7 @@ const Mitra = ({ mitra }) => {
             })}
           </div>
 
-          <div className="mb-6">
+          {fotoKegiatan && (<div className="mb-6">
             <h2 className="h2 capitalize mb-6">Foto Kegiatan {judulLink}</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:gap-4">
 				{
@@ -122,8 +122,9 @@ const Mitra = ({ mitra }) => {
 					))
 				}
 			</div>
-          </div>
-          <div>
+          </div>)}
+
+         { fotoFasilitas && (<div>
             <h2 className="h2 capitalize mb-4">Fasilitas Pendidikan</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:gap-4">
 				{
@@ -141,7 +142,7 @@ const Mitra = ({ mitra }) => {
 					))
 				}
 			</div>
-          </div>
+          </div>)}
 
           <div>
             <h2 className="h2 capitalize my-4">Lokasi Pendidikan</h2>
