@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 // import all section components
 import Navbar from "@/layout/navigation/navbar";
 import Hero from "@/components/hero/hero";
@@ -10,9 +9,7 @@ import News from "@/components/news/news";
 import Questions from "@/components/questions/question";
 import SliderPeople from "@/components/people/sliderPeople";
 import Katalog from "@/components/katalog/katalog";
-
-
-
+import FormOnHomepage from "@/components/agent/formOnHomepage";
 // others
 import { client } from "@/contentful/client";
 
@@ -55,6 +52,7 @@ export default function Home({ layanan, mitra, orang, redaksi, mediaSatpam }) {
           <Questions/>
 		  <Katalog dataMitra={mitra.items}/>
           <News dataMedia={mediaSatpam.items}/>
+		  <FormOnHomepage/>
         </main>
       </Navbar>
       <div className="bg-gradientPrimary">
