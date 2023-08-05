@@ -14,29 +14,30 @@ export default function Navbar({ children }) {
       path: "/",
     },
     {
-      menu: "Layanan Kami",
-      path: "/layanan",
-    },
-    {
-      menu: "Ayo Jadi Satpam",
-      path: "/#katalog",
-    },
-    {
       menu: "Company Profile",
       path: "/company-profile",
+    },
+    {
+      menu: "Layanan Kami",
+      path: "/layanan",
     },
     {
       menu: "Mitra Koorporasi",
       path: "/mitra",
     },
     {
+      menu: "Ayo Jadi Satpam",
+      path: "/#katalog",
+    },
+
+    {
       menu: "Agen JISS Agency",
       path: "/agen",
     },
-	{
-		menu: "Sponsorship JISS",
-		path: "/sponsorship",
-	  },
+    {
+      menu: "Sponsorship JISS",
+      path: "/sponsorship",
+    },
     {
       menu: "Kontak",
       path: "/#contact",
@@ -62,14 +63,14 @@ export default function Navbar({ children }) {
   return (
     <>
       <header className="flex items-center gap-8 justify-between z-50 md:mt-5  sticky top-0 bg-gradientBlue md:px-10 lg:px-[8.6875rem] px-4 text-white">
-        <Link href='/' className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src={jissLogo}
             width={70}
             height={70}
             alt="jiss Logo"
             priority={true}
-			className="my-2 max-md:w-[40px]"
+            className="my-2 max-md:w-[40px]"
           />
           <p className="text-[2.5rem] uppercase max-md:hidden">Jiss</p>
         </Link>
