@@ -30,7 +30,7 @@ export default function Navbar({ children }) {
       path: "/#katalog",
     },
     {
-      menu: "Ayo Jadi Member",
+      menu: "Ayo Jadi Member JISS",
       path: "/#member",
     },
     {
