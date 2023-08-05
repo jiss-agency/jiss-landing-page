@@ -29,7 +29,10 @@ export default function Navbar({ children }) {
       menu: "Ayo Jadi Satpam",
       path: "/#katalog",
     },
-
+    {
+      menu: "Ayo Jadi Member",
+      path: "/#member",
+    },
     {
       menu: "Agen JISS Agency",
       path: "/agen",

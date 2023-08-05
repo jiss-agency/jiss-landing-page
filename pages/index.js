@@ -10,6 +10,7 @@ import Questions from "@/components/questions/question";
 import SliderPeople from "@/components/people/sliderPeople";
 import Katalog from "@/components/katalog/katalog";
 import FormOnHomepage from "@/components/agent/formOnHomepage";
+import Member from "@/components/member/member";
 // others
 import { client } from "@/contentful/client";
 
@@ -53,6 +54,7 @@ export default function Home({ layanan, mitra, orang, redaksi, mediaSatpam }) {
 		  <Katalog dataMitra={mitra.items}/>
           <News dataMedia={mediaSatpam.items}/>
 		  <FormOnHomepage/>
+		  <Member/>
         </main>
       </Navbar>
       <div className="bg-gradientPrimary">
