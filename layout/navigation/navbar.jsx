@@ -18,7 +18,7 @@ export default function Navbar({ children }) {
       path: "/layanan",
     },
     {
-      menu: "Katalog Prodak",
+      menu: "Ayo Jadi Satpam",
       path: "/#katalog",
     },
     {
