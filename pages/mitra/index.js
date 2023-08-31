@@ -3,8 +3,7 @@ import Navbar from "@/layout/navigation/navbar";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import smsb from "@/assets/smsb.jpeg";
-import pataka from "@/assets/pataka.jpeg";
+import man from "@/assets/manpower.jpeg";
 
 import { client } from "@/contentful/client";
 
@@ -77,6 +76,13 @@ export default function index({ mitra }) {
                 />
               );
             })}
+			<Image
+                  src={man}
+                  width={400}
+                  height={500}
+                  className="w-full h-auto border-2 bg-slate-100"
+                  alt="piagam kerjasama man power"
+                />
           </div>
         </div>
       </Navbar>

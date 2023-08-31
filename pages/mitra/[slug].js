@@ -3,8 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "@/layout/navigation/navbar";
 import { client } from "@/contentful/client";
-import AllPages from "@/components/pdf/all-pages";
-import { BsBoxArrowUpRight } from "react-icons/bs";
 import InfoContainer from "@/components/general/infoContainer";
 import LinkComp from "@/components/general/link";
 
